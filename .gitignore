@@ -21,4 +21,8 @@ build/
 *.swo
 
 # Environment variables
-.env 
+.env
+
+# Reference and task files
+ref_*.py
+task_*.py 
