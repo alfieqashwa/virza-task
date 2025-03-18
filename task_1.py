@@ -33,7 +33,14 @@ def main():
     print("-"*53)
 
     # Input jumlah siswa
-    jumlah_siswa = int(input("Masukkan jumlah siswa: "))
+    while True:
+        try:
+            jumlah_siswa = int(input("Masukkan jumlah siswa: "))
+            if jumlah_siswa is not int:
+                break
+            print("Error: Jumlah kehadiran harus angka")
+        except ValueError:
+            print("Error: Masukkan angka yang valid")
     
     # List untuk menyimpan data siswa
     data_siswa = []
